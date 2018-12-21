@@ -367,7 +367,7 @@ var Calendar = {
         $('#week-num').html(date);
     },
     shiftWeek: function (offset) {
-        this.currentWeek = Math.min(Math.max((new Date(this.startingDate)).getWeekNumber(), this.currentWeek + offset), 43); //43 is the calendar week of the end of the teaching semester
+        this.currentWeek = Math.min(Math.max((new Date(this.startingDate)).getWeekNumber(), this.currentWeek + offset), 14); //43 is the calendar week of the end of the teaching semester
         Calendar.generateCourseGrid();
         Course.clear(null, true).recover();
         Calendar.updateView();
