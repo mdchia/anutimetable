@@ -561,6 +561,7 @@ var Course = {
             delete rawData[3][i].nid;
             delete rawData[3][i].iid;
             delete rawData[3][i].lid;
+            console.log(rawData[3][i].fullName);
         });
         rawLessons = rawData[3];
 
