@@ -558,12 +558,12 @@ var Course = {
             rawData[3][i].location = rawData[2][course.lid];
             rawData[3][i].name     = rawData[3][i].fullName.match(/^([a-zA-Z0-9\(\)]+)_.+?\s(.+)/)[1];
             rawData[3][i].day      = parseInt(course.day) !== course.day ? course.day : Calendar.weekdays[course.day]; // update transition detection
-            console.log(rawData[3][i].nid, rawData[3][i].iid, rawData[3][i].lid);
+            //console.log(rawData[3][i].fullName); // uncomment if you need to find a specific course breaking it
+            //console.log(i);
+            //console.log(rawData[3][i].nid, rawData[3][i].iid, rawData[3][i].lid);
             delete rawData[3][i].nid;
             delete rawData[3][i].iid;
             delete rawData[3][i].lid;
-            console.log(rawData[3][i].fullName);
-            console.log(i);
         });
         rawLessons = rawData[3];
 
