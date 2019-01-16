@@ -150,13 +150,18 @@ END:VEVENT
   </table>
 </script>
 <script type="text/javascript">
+i=1;
 function setweek2(){
-  if (typeof Calendar !== 'undefined'){
-  window.setTimeout(setweek2, 100);
+  if (i==1){
+  window.setTimeout(window.setweek2, 1000);
+  console.log("a")
+  i++;
 } else {
   Calendar.shiftWeek(1);
+  console.log("b")
 }
 }
+window.setweek2();
 </script>
 </body>
 </html>
