@@ -150,7 +150,14 @@ END:VEVENT
   </table>
 </script>
 <script type="text/javascript">
-window.onload=Calendar.shiftWeek(1)
+function setweek2(){
+  if typeof Calendar !== 'undefined'{
+  window.setTimeout(setweek2, 100);
+}
+else {
+  Calendar.shiftWeek(1);
+}
+}
 </script>
 </body>
 </html>
