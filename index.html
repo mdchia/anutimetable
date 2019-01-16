@@ -151,10 +151,9 @@ END:VEVENT
 </script>
 <script type="text/javascript">
 function setweek2(){
-  if typeof Calendar !== 'undefined'{
+  if (typeof Calendar !== 'undefined'){
   window.setTimeout(setweek2, 100);
-}
-else {
+} else {
   Calendar.shiftWeek(1);
 }
 }
